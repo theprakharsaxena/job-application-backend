@@ -12,7 +12,7 @@ import { errorMiddleware } from "./middleware/error.js";
 
 const app = express();
 // ========================
-dotenv.config({ path: "./config/config.env" });
+dotenv.config();
 
 app.use(
   cors({

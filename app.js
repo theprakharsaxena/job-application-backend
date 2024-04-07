@@ -8,11 +8,10 @@ import jobRouter from "./routes/jobRouter.js";
 import applicationRouter from "./routes/applicationRouter.js";
 import { dbConnection } from "./database/dbconnection.js";
 import { errorMiddleware } from "./middleware/error.js";
-// dotenv.config();
+dotenv.config();
 
 const app = express();
 // ========================
-dotenv.config();
 
 app.use(
   cors({
